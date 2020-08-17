@@ -1,0 +1,140 @@
+.mobile-banner{
+    display: none;
+}
+
+.carousel{
+    position: relative;
+    height:100vh;
+    width: 100vw;
+    background-color: var(--primmary-color);
+}
+.carousel-image{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+}
+.carousel-track-container{
+    height:100%;
+    width: 100%;
+    position:relative;
+    overflow: hidden;
+}
+.carousel-track{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition:transform 500ms ease-in;
+}
+.carousel-slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    :nth-last-child(-n+6) ~{
+    
+        display: hidden;
+        visibility: hidden;
+    }
+}
+.carousel-slide-grid{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-nav{
+    position: absolute;
+    background-color: rgba(52,52,52,0.7);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: -70px 0;
+}
+.carousel-indicator{
+    margin: 0 10px;
+    border: solid 8px var(--border-gray-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background:var(--white-color);
+    cursor:pointer;
+    outline: none;
+}
+.carousel-indicator.current-slide{
+    border: solid 8px var(--white-color);
+    background-color: var(--weak-green-color);
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow-x: hidden;
+}
+
+.container{
+    h1{
+        font-weight: bold;
+        font-size: 40pt;
+        text-transform: uppercase;
+        color:var(--weak-green-color);
+        margin-top: 10px;    
+    }
+
+    p{
+        font-weight: bold;
+        font-size: 20pt;
+        color:var(--strong-green-color);
+        margin-bottom: 20px;
+        overflow-x: hidden;
+    }
+    img{
+        width: 55px;
+        height: 80px;
+    }
+}
+
+
+@media only screen and (max-width:1180px){
+    .mobile-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+        height: 20vh;
+        background-color: var(--background-gray-color);
+        color:var(--white-color)
+    }
+    .mobile-banner h1 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .container h1, .container p {
+        display: none;
+    }
+    .carousel{
+        height: 70vh;
+    }
+    .carousel-image{
+        background-size: 100% 70%;
+    }
+    .carousel-nav{
+        width: 100%;
+        padding: 10px 0;
+        margin: -70px 0;
+    }
+}

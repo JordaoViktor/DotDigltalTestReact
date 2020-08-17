@@ -1,11 +1,10 @@
 import React from 'react';
-
+import Banner from './components/Banner'
+import './GlobalStyles.scss'
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Banner/>
   );
 }
 
