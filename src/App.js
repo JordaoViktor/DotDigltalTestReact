@@ -6,6 +6,8 @@ import Banner from './components/Banner'
 import Carousel from './components/CarrouselListPage'
 import Profile from './components/Profile'
 import Accordion from './components/Accordion'
+import Email from './components/Email'
+
 function App() {
   return (
     <>
@@ -13,6 +15,7 @@ function App() {
       <Carousel/>
       <Profile/>
       <Accordion/>
+      <Email/>
     </>
   );
 }
