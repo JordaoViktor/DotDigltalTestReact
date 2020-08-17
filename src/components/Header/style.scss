@@ -1,0 +1,20 @@
+.mobile-banner{
+    display: none;
+}
+@media only screen and (max-width:1180px){
+    .mobile-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+        height: 20vh;
+        background-color: var(--background-gray-color);
+        color:var(--white-color)
+    }
+    .mobile-banner h1 {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+}

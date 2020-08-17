@@ -136,14 +136,16 @@
     }
     
     .carousel-button{        
-        top: 0;
-        transform: translateY(1050%);
+        top: 50%;
+        // transform: translateY(1050%);
     }
     .carousel-button-right{
-        right: 25%;   
+        right: 20%;   
     }
     .carousel-button-left{
-        left: 25%;
+        left: 20%;
+        top:40%;
+        z-index: 2;
     } 
 
 }
