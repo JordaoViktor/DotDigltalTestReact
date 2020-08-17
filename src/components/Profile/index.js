@@ -8,7 +8,7 @@ const Page = () =>{
         <section className="profile">
             <div className="profile-container">
                 <div className="profile-image">
-                    <img src={image} alt="image"/>
+                    <img src={image} alt=""/>
                 </div>
                 <div className="profile-content">
                     <h2 className="title">Lorem Ipsun</h2>

@@ -9,7 +9,7 @@ const Page = ()=> {
             <div className="accordion border">
                 <div className="toggle ">
                     <input type="checkbox" name="user-accordion" id="section1" className="accordion-input "/>
-                    <label for="section1" className="accordion-label border-top">Lorem Ipsum</label>
+                    <label htmlFor="section1" className="accordion-label border-top">Lorem Ipsum</label>
                     <div className="accordion-content">
                         <div className="accordion-container">
                             <img src={image} alt=""/>
@@ -21,7 +21,7 @@ const Page = ()=> {
                 </div>
                 <div className="toggle">
                     <input type="checkbox" name="user-accordion" id="section2" className="accordion-input"/>
-                    <label for="section2" className="accordion-label">Lorem Ipsum</label>
+                    <label htmlFor="section2" className="accordion-label">Lorem Ipsum</label>
                     <div className="accordion-content">
                         <div className="accordion-container">
                             <img src={image} alt=""/>
@@ -33,7 +33,7 @@ const Page = ()=> {
                 </div>
                 <div className="toggle">
                     <input type="checkbox" name="user-accordion" id="section3" className="accordion-input"/>
-                    <label for="section3" className="accordion-label">Lorem Ipsum</label>
+                    <label htmlFor="section3" className="accordion-label">Lorem Ipsum</label>
                     <div className="accordion-content">
                         <div className="accordion-container">
                             <img src={image} alt=""/>
@@ -45,7 +45,7 @@ const Page = ()=> {
                 </div>
                 <div className="toggle">
                     <input type="checkbox" name="user-accordion" id="section4" className="accordion-input"/>
-                    <label for="section4" className="accordion-label">Lorem Ipsum</label>
+                    <label htmlFor="section4" className="accordion-label">Lorem Ipsum</label>
                     <div className="accordion-content">
                         <div className="accordion-container">
                             <img src={image} alt=""/>
@@ -57,7 +57,7 @@ const Page = ()=> {
                 </div>
                 <div className="toggle">
                     <input type="checkbox" name="user-accordion" id="section5" className="accordion-input"/>
-                    <label for="section5" className="accordion-label ">Lorem Ipsum</label>
+                    <label htmlFor="section5" className="accordion-label ">Lorem Ipsum</label>
                     <div className="accordion-content border-bottom">
                         <div className="accordion-container">
                             <img src={image} alt=""/>

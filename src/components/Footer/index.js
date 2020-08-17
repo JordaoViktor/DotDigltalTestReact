@@ -3,7 +3,7 @@ import './style.scss'
 
 const Page = () => {
     return (
-        <footer class="footer">
+        <footer className="footer">
             <h2>Lorem Ipsum</h2>
         </footer>
     );
