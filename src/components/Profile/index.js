@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+
 import image from '../../assets/background.jpg'
 
 const Page = () =>{
