@@ -36,7 +36,6 @@
     transform:rotate(90deg);
     fill: #FFF;
     cursor: pointer;
-    
 }
 .slick-list{
     width: 100vw;
@@ -46,14 +45,37 @@
 .slick-track{
     display: flex;
     align-items: center;
+    
 }
 .carousel-slide-grid{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.flex-container{
+    margin-bottom: 100px;
+}
 @media only screen and (max-width:1180px){
     
+    .slick-arrow{
+        height: 30px;
+        position: absolute;
+        top:80%;
+        z-index: 2;
+    }
+    .slick-next{
+        right: 40%;
+        background-image: url('../../assets/arrow-down.svg');
+        transform:rotate(270deg);
+        fill: #FFF;
+        cursor: pointer;
+        
+    }
     
-
+    .slick-prev{
+        left: 40%;
+    }
+    .flex-container{
+        margin-bottom: 150px;
+    }
 }

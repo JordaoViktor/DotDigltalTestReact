@@ -51,7 +51,7 @@ const Page = () =>{
         <section className="carousel-background" id="profile">
             <div className="carousel-track-container">
                 <Slider className="slide-grid"{...settings}>
-                    <div>
+                    <div className="middle">
                         <Card/>
                     </div>
                     <div>
