@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss'
 
-import arrowDown  from '../../assets/arrow-down.svg'
+import arrowDown  from '../../assets/arrow-down-banner.svg'
 
 const Page = () => {
     return(

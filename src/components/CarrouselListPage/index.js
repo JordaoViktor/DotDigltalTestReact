@@ -1,125 +1,76 @@
 import React from 'react';
 import './style.scss';
+import Slider from 'react-slick'
+import Card from '../Card';
+import arrow from '../../assets/arrow-down-banner.svg'
 
-import arrow  from '../../assets/arrow-down.svg'
-
-import cardImage from '../../assets/background.jpg'
-
-
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, background: "red", width: '40px', height:"40px" }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, width: '60px', height:'60px', left: '5%', }}
+        onClick={onClick}
+      />
+    );
+  }
 const Page = () =>{
+
+    let settings = {
+        arrow:true,
+        infinite:false,
+        speed:500,
+        slidesToShow:3,
+        slidesToScroll:3,
+        nextArrow:<SampleNextArrow/>,
+        prevArrow:<SamplePrevArrow/>
+        
+    }
+
     return(
         <section className="carousel-background" id="profile">
-
-            <button className="carousel-button carousel-button-left">
-                <img src={arrow} alt=""/>
-            </button>
-
             <div className="carousel-track-container">
-                <ul className="carousel-track-grid ">
-                    <li className="carousel-slide  current-slide-grid ">
-                        <div className="grid-container flex-carousel ">
-                            
-                            <div className="card flex-item">
-                                <img src={cardImage} alt=""/>
-                                <h3>Lorem Ipsum</h3>
-                                <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                            </div>
-                            
-                            <div className="left-side">
-                                <div className="card card-left-side">
-                                    <img src={cardImage} alt=""/>
-                                    <h3>Lorem Ipsum</h3>
-                                    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                                </div>
-                            </div>
-                            <div className="middle ">
-                                <div className="card card-middle-side">
-                                    <img src={cardImage} alt=""/>
-                                    <h3>Lorem Ipsum</h3>
-                                    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                                </div>
-                            </div>
-                            <div className="right-side">
-                                <div className="card card-right-side">
-                                    <img src={cardImage} alt=""/>
-                                    <h3>Lorem Ipsum</h3>
-                                    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li className="carousel-slide current-slide-grid ">
-                        <div className="grid-container flex-carousel">
-                            <div className="card">
-                                <img src={cardImage} alt=""/>
-                                <h3>Lorem Ipsum</h3>
-                                <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                            </div>
-
-                            <div className="left-side ">    
-                                <div className="card card-left-side">
-                                    <img src={cardImage} alt=""/>
-                                    <h3>Lorem Ipsum</h3>
-                                    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                                </div>
-                            </div>
-                            <div className="middle ">
-                                <div className="card card-middle-side">
-                                    <img src={cardImage} alt=""/>
-                                    <h3>Lorem Ipsum</h3>
-                                    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                                </div>
-                            </div>
-                            <div className="right-side">
-                                <div className="card card-right-side">
-                                    <img src={cardImage} alt=""/>
-                                    <h3>Lorem Ipsum</h3>
-                                    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                                </div>
-                                
-                            </div>
-                        
-                        </div>
-                    </li>
-                    <li className="carousel-slide current-slide-grid">
-                        <div className="grid-container flex-carousel">
-
-                            <div className="card flex-item">
-                                <img src={cardImage} alt=""/>
-                                <h3>Lorem Ipsum</h3>
-                                <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                            </div>
-
-                            <div className="left-side">
-                                <div className="card card-left-side">
-                                    <img src={cardImage} alt=""/>
-                                    <h3>Lorem Ipsum</h3>
-                                    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                                </div>
-                            </div>
-                            <div className="middle ">
-                                <div className="card card-middle-side">
-                                    <img src={cardImage} alt=""/>
-                                    <h3>Lorem Ipsum</h3>
-                                    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                                </div>
-                            </div>
-                            <div className="right-side">
-                                <div className="card card-right-side">
-                                    <img src={cardImage} alt=""/>
-                                    <h3>Lorem Ipsum</h3>
-                                    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</article>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </li>
-                    
-                </ul>
+                <Slider className="slide-grid"{...settings}>
+                    <div>
+                        <Card/>
+                    </div>
+                    <div>
+                        <Card/>
+                    </div>
+                    <div>
+                        <Card/>
+                    </div>
+                    <div>
+                        <Card/>
+                    </div>
+                    <div>
+                        <Card/>
+                    </div>
+                    <div>
+                        <Card/>
+                    </div>
+                    <div>
+                        <Card/>
+                    </div>
+                    <div>
+                        <Card/>
+                    </div>
+                    <div>
+                        <Card/>
+                    </div>
+                </Slider>
             </div>
-            <button className="carousel-button carousel-button-right">
-                <img src={arrow} alt=""/>
-            </button>
         </section>
     )
 }
