@@ -12,20 +12,9 @@ const Page = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dotsClass: "button__bar",
         appendDots: dots => (
           <div
-            style={{
-              width:'100%',
-              height:'15vh',
-              background:'rgba(52,52,52,0.7)',
-              display:'flex',
-              marginTop:'-7.5vh',
-              alignItems:'center',
-              justifyContent:'center',
-              zIndex:3,
-              cursor:'pointer'
-            }}
+            className="dots-nav"
           >
             <ul style={{ marginBottom: "40px", display:'flex'}}> {dots} </ul>
           </div>
