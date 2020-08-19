@@ -34,7 +34,16 @@ const Page = () =>{
         slidesToShow:3,
         slidesToScroll:3,
         nextArrow:<SampleNextArrow/>,
-        prevArrow:<SamplePrevArrow/>
+        prevArrow:<SamplePrevArrow/>,
+        responsive:[
+           {
+            breakpoint:1180,
+            settings:{
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+           }
+        ]
         
     }
 
