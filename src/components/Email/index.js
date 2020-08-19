@@ -1,6 +1,8 @@
 import React from 'react';
 import './style.scss'
 
+import Button from '../Button';
+
 const Page = () => {
     return (
         <section className="email-page">
@@ -23,9 +25,9 @@ const Page = () => {
                     <span className="">*Mensagem:</span>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Escreva aqui"></textarea>
                 </div>
-                <button className="submit-button"type="submit" href="#">
+                <Button>
                     Enviar
-                </button>
+                </Button>
             </form>
         </section>
     )

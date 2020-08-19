@@ -1,0 +1,15 @@
+.btn{
+    padding: 20px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:var(--black-color);
+    background-color: var(--white-color);
+    border:none;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.btn:hover{
+   background-color: var(--secondary-color);
+   transition: ease-in .2s;
+}
