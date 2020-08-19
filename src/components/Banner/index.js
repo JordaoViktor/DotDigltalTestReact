@@ -12,6 +12,7 @@ const Page = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        dotsClass: "button__bar",
         appendDots: dots => (
           <div
             style={{
@@ -19,7 +20,6 @@ const Page = () => {
               height:'15vh',
               background:'rgba(52,52,52,0.7)',
               display:'flex',
-              
               marginTop:'-7.5vh',
               alignItems:'center',
               justifyContent:'center',
@@ -30,24 +30,12 @@ const Page = () => {
             <ul style={{ marginBottom: "40px", display:'flex'}}> {dots} </ul>
           </div>
         ),
-        customPaging: i => (
-          <div
-            style={{
-              width: "60px",
-              height:'60px',
-              color: "blue",
-              border: "solid 8px var(--border-gray-color)",
-              margin: '0 30px',
-              zIndex:3,
-              marginBottom:'20px',
-              marginTop:'50px',
-              borderRadius: '50%',             
-              background:'var(--white-color)',
-              cursor:'pointer',
-              outline: 'none',
-            }}
+        customPaging: index => (
+          <button
+            className='button'
           >
-          </div>
+            
+          </button>
         )
       };
 
