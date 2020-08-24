@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 import Slider from 'react-slick'
 import Card from '../Card';
-import arrow from '../../assets/arrow-down-banner.svg'
+
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -29,7 +29,7 @@ const Page = () =>{
 
     let settings = {
         arrow:true,
-        infinite:false,
+        infinite:false,       
         speed:500,
         slidesToShow:3,
         slidesToScroll:3,
@@ -50,8 +50,8 @@ const Page = () =>{
     return(
         <section className="carousel-background" id="profile">
             <div className="carousel-track-container">
-                <Slider className="slide-grid"{...settings}>
-                    <div className="middle">
+                <Slider className="slide-grid" {...settings}>
+                    <div>
                         <Card/>
                     </div>
                     <div>

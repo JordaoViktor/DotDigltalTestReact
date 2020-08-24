@@ -20,11 +20,7 @@ const Page = () => {
           </div>
         ),
         customPaging: index => (
-          <button
-            className='button'
-          >
-            
-          </button>
+          <button className='button'></button>
         )
       };
 
