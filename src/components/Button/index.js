@@ -3,7 +3,7 @@ import './style.scss'
 
 const Button = props => {
     return(
-        <button className="btn"type="submit" href="#">
+        <button className="btn"type="submit">
             {props.children}
         </button>
     )
