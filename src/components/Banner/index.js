@@ -19,7 +19,7 @@ const Page = () => {
             <ul style={{ marginBottom: "40px", display:'flex'}}> {dots} </ul>
           </div>
         ),
-        customPaging: index => (
+        customPaging: () => (
           <button className='button'></button>
         )
       };

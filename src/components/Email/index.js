@@ -1,8 +1,7 @@
 import React from 'react';
 import { Formik, Form as FormikForm, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
-import './style.scss'
-
+import './style.scss';
 
 import Button from '../Button';
 

@@ -7,7 +7,7 @@ const Page = ()=> {
     return(
         <section className="accordion-page ">
             <div className="accordion border">
-                <div className="toggle ">
+                <div className="toggle">
                     <input type="checkbox" name="user-accordion" id="section1" className="accordion-input "/>
                     <label htmlFor="section1" className="accordion-label border-top">Lorem Ipsum</label>
                     <div className="accordion-content">
