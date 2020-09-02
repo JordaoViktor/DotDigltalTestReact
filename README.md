@@ -7,6 +7,10 @@ Estou utilizando para esse projeto
 <ul>
     <li>React</li>
     <li>SCSS</li>
+    <li>React-slick</li>
+    <li>Formik</li>
+    <li>Yup</li>
+    <li>React-testing-library</li>
 </ul>
 
 ### Para fazer o build do projeto utilizar o comando
